@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Guide2Golf | Beginner</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+/* Style the body */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+/* Header/logo Title */
+.header {
+  padding: 80px;
+  text-align: center;
+  background-image: url(beautiful-golf-courses-2.1.jpg);
+  background-size:cover;
+  color: white;
+}
+
+/* Increase the font size of the heading */
+.header h1 {
+  font-size: 40px;
+}
+
+/* Sticky navbar - toggles between relative and fixed, depending on the scroll position. It is positioned relative until a given offset position is met in the viewport - then it "sticks" in place (like position:fixed). The sticky value is not supported in IE or Edge 15 and earlier versions. However, for these versions the navbar will inherit default position */
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0;
+}
+
+/* Style the navigation bar links */
+.navbar a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+}
+
+
+/* Right-aligned link */
+.navbar a.right {
+  float: right;
+}
+
+/* Change color on hover */
+.navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Active/current link */
+.navbar a.active {
+  background-color: #666;
+  color: white;
+}
+
+/* Column container */
+.row {  
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+}
+
+/* Create two unequal columns that sits next to each other */
+/* Sidebar/left column */
+.side {
+  -ms-flex: 30%; /* IE10 */
+  flex: 30%;
+  background-color:rgb(235, 235, 238);
+  padding: 20px;
+}
+
+/* Main column */
+.main {   
+  -ms-flex: 70%; /* IE10 */
+  flex: 70%;
+  background-image:url(bodyimage6.jpg);
+  background-size: cover;
+  padding: 20px;
+}
+
+/* Fake image, just for this example */
+.fakeimg {
+  background-color: #aaa;
+  width: 100%;
+  padding: 20px;
+}
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+}
+
+/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 700px) {
+  .row {   
+    flex-direction: column;
+  }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .navbar a {
+    float: none;
+    width: 100%;
+  }
+}
+</style>
+</head>
+<body>
+    <div class="header">
+        <h1>Irons</h1>
+  <p>Helping you improve your golf swing.</p>
+</div>
+
+<div class="navbar">
+    <a href="homepage.html">Home</a>
+    <a href="contact.html" style="float:right" >Contact</a>
+    <a href="courses.html">Courses</a>
+    <a href=clubs.html>Clubs</a>
+    <a href="about.html">About</a>
+</div>
+
+<div class="row">
+  <div class="side">
+    <h2>What you need:</h2>
+    <h5>Clubs</h5>
+    <li>3,4,5,6,7,8,9 iron</li>
+    <br>
+    <li>PW</li>
+    <br>
+    <li>SW</li>
+    <p>These clubs are essential for starting off or at any level of ability.</p>
+    <h2>What you'll learn:</h2>
+    <li>When to use these clubs</li>
+    <br>
+    <li>How to hit these clubs</li>
+  <div class="main">
+    <h2>Irons</h2>
+    <h5>Always start off by learning how to hit your irons first.</h5>
+    <img src="data:image/jpeg;base64,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" style="height:200px">
+    <br>
+    <a href="https://youtu.be/NxzumhNDqTA">Click here to learn how to hit your irons</a>
+  </div>
+</div>
+
+<div class="footer">
+  <h2>Guide2Golf</h2>
+</div>
+
+</body>
+</html>

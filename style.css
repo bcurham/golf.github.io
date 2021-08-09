@@ -1,0 +1,199 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  /* Style the body */
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    background-image:url('bodyimage6.jpg');
+    background-size:cover;
+    
+    
+    
+  }
+  
+  /* Header/logo Title */
+  .header {
+    background-image: url('beautiful-golf-courses-2.jpg');
+    background-size:cover;
+    height: 450px;
+    text-align: center;
+    color: white;
+    display: flex;
+      justify-content: center;
+      align-content: center;
+      flex-direction: column;
+      margin: auto;
+  }
+  
+  /* Increase the font size of the heading */
+  .header h1 {
+    font-size: 40px;
+  }
+  
+  /* Style the top navigation bar */
+  .navbar {
+    overflow: hidden;
+    background-color: rgb(10, 10, 10);
+    position:sticky;
+    top:0;
+  }
+  
+  /* Style the navigation bar links */
+  .navbar a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+    
+    
+  }
+  
+  
+  
+  /* Change color on hover */
+  .navbar a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+  /* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 700px) {
+    .row {   
+      flex-direction: column;
+    }
+  }
+  
+  /* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+  @media screen and (max-width: 400px) {
+    .navbar a {
+      float: none;
+      width: 100%;
+    }
+  }
+
+  .row .box {
+      width: 400px;
+      background-color: rgb(183, 183, 192);
+      margin: 30px;
+      display: inline;
+      float: left;
+      border-radius: 30px;
+      height: 600px;
+      display:flex;
+      justify-content: center;
+      align-items: flex-end;
+      
+
+  }
+
+  .row {
+      list-style: none;
+      display:flex;
+      justify-content: center;
+      align-items: center;
+      padding-top: 100px;
+  }
+
+  
+  * {
+    box-sizing: border-box;
+  }
+  
+  /* Style the body */
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    background-image: url(bodyimage6.jpg);
+    background-size: cover;
+  }
+  
+  /* Header/logo Title */
+  .header {
+    padding: 80px;
+    text-align: center;
+    background-image: url(beautiful-golf-courses-2.jpg);
+    background-size:cover;
+    color: white;
+  }
+  
+  /* Increase the font size of the heading */
+  .header h1 {
+    font-size: 40px;
+  
+  }
+  
+  /* Style the top navigation bar */
+  .navbar {
+    overflow: hidden;
+    background-color: #333;
+  }
+  
+  /* Style the navigation bar links */
+  .navbar a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+  }
+  
+  /* Change color on hover */
+  .navbar a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+  /* Column container */
+  .row {  
+    display: -ms-flexbox; /* IE10 */
+    display: flex;
+    -ms-flex-wrap: wrap; /* IE10 */
+    flex-wrap: wrap;
+  }
+  
+  /* Create two unequal columns that sits next to each other */
+  /* Sidebar/left column */
+  .side {
+    -ms-flex: 30%; /* IE10 */
+    flex: 30%;
+    background-color: #f1f1f1;
+    padding: 20px;
+  }
+  
+  /* Main column */
+  .main {   
+    -ms-flex: 70%; /* IE10 */
+    flex: 70%;
+    background-color: white;
+    padding: 20px;
+  }
+  
+  #location {
+      font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  #location td, #location th {
+      border: 1px solid #ddd;
+      padding: 8px;
+  }
+  
+  #location tr:nth-child(even){background-color: #f2f2f2;}
+  
+  #location tr:hover {background-color: #ddd;}
+  
+  #location th {
+      padding-top: 12px;
+      padding-bottom: 12px;
+      text-align: left;
+      background-color: #ee8f41;
+      color: white;
+  }
+  
+  
